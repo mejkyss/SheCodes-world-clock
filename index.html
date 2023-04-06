@@ -10,15 +10,28 @@
     <title>World clock - Markéta Dokoupilová</title>
   </head>
   <body>
-    <h1>World Clock</h1>
+    <div class="container">
+      <h1>World Clock</h1>
+      <select id="cities">
+        <option value="">Select a city</option>
+        <option value="paris">Prague</option>
+        <option value="tokyo">New York</option>
+        <option value="sydney">Sydney</option>
+      </select>
+      <div class="city">
+        <h2>Los Angeles</h2>
 
-    <select id="cities">
-      <option value="">Select a city</option>
-      <option value="paris">Paris 🇫🇷</option>
-      <option value="tokyo">Tokyo 🇯🇵</option>
-      <option value="sydney">Sydney 🇦🇺</option>
-    </select>
-    <script type="text/javascript" src="../src/index.js"></script>
+        <div class="date">15th August 2023</div>
+        <div class="time">1:48:15 AM</div>
+      </div>
+      <div class="city">
+        <h2>Sydney</h2>
+
+        <div class="date">15th August 2023</div>
+        <div class="time">1:48:15 AM</div>
+      </div>
+    </div>
+    <!--end of container div-->
     <footer>
       This project was coded by Markéta Dokoupilová & is
       <a
@@ -28,5 +41,6 @@
         >open sourced on Github</a
       >
     </footer>
+    <script type="text/javascript" src="../src/index.js"></script>
   </body>
 </html>
