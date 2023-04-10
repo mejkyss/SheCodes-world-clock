@@ -57,7 +57,14 @@ function updateCity(event) {
         </div>
         <div class="city">
           <div>
+          <a href="#" id="all-cities">All cities</a>
   `;
+    function reloadPage() {
+      window.location.reload();
+    }
+
+    let allCitiesElement = document.querySelector("#all-cities");
+    allCitiesElement.addEventListener("click", reloadPage);
   }, 1000);
 }
 
