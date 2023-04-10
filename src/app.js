@@ -24,11 +24,12 @@ setInterval(function () {
 }, 1000);
 
 function updateCity(event) {
-  let cityTimeZone = event.target.value;
-  let cityName = event.target.selectedOptions[0].innerHTML;
-  let cityTime = moment().tz(cityTimeZone);
-  let citiesElement = document.querySelector("#cities");
-  citiesElement.innerHTML = `
+  setInterval(function () {
+    let cityTimeZone = event.target.value;
+    let cityName = event.target.selectedOptions[0].innerHTML;
+    let cityTime = moment().tz(cityTimeZone);
+    let citiesElement = document.querySelector("#cities");
+    citiesElement.innerHTML = `
   <div class="city"">
           <div>
             <h2>${cityName}</h2>
@@ -42,6 +43,7 @@ function updateCity(event) {
         <div class="city">
           <div>
   `;
+  }, 1000);
 }
 
 let citiesSelectElement = document.querySelector("#cities-select");
