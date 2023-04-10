@@ -21,6 +21,16 @@ setInterval(function () {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  let olbramkostelElement = document.querySelector("#olbramkostel");
+  if (olbramkostelElement) {
+    let olbramkostelDateElement = olbramkostelElement.querySelector(".date");
+    let olbramkostelTimeElement = olbramkostelElement.querySelector(".time");
+    let olbramkostelTime = moment().tz("Europe/prague");
+    olbramkostelDateElement.innerHTML = olbramkostelTime.format("MMMM Mo YYYY");
+    olbramkostelTimeElement.innerHTML = olbramkostelTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }, 1000);
 
 function updateCity(event) {
