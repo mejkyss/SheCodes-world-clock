@@ -1,0 +1,1 @@
+# world-clock is a simple web application that allows you to view the time and date in various time zones. The app features a selection of cities to demonstrate my coding skills, and includes a drop-down menu that allows you to select a city and instantly see its current time and date. In addition, the app includes the functionality for you to display your current time zone.
