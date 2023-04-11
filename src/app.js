@@ -21,13 +21,13 @@ setInterval(function () {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  let olbramkostelElement = document.querySelector("#olbramkostel");
-  if (olbramkostelElement) {
-    let olbramkostelDateElement = olbramkostelElement.querySelector(".date");
-    let olbramkostelTimeElement = olbramkostelElement.querySelector(".time");
-    let olbramkostelTime = moment().tz("Europe/prague");
-    olbramkostelDateElement.innerHTML = olbramkostelTime.format("MMMM Mo YYYY");
-    olbramkostelTimeElement.innerHTML = olbramkostelTime.format(
+  let znojmoElement = document.querySelector("#znojmo");
+  if (znojmoElement) {
+    let znojmoDateElement = znojmoElement.querySelector(".date");
+    let znojmoTimeElement = znojmoElement.querySelector(".time");
+    let znojmoTime = moment().tz("Europe/prague");
+    znojmoDateElement.innerHTML = znojmoTime.format("MMMM Mo YYYY");
+    znojmoTimeElement.innerHTML = znojmoTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
